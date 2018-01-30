@@ -9,7 +9,7 @@
         <router-link to="/" class='menu-title'><img src="../assets/home.png" alt="首页"> 首页</router-link>
       </div>
       <ul class="wrapper">
-        <li v-for="(item, index) in info" v-bind:key="index"
+        <li v-for="(item, index) in info" :key="item.id"
             :class="[index % 2 === 0?'white':'green']"
             :title="item.title"
             @click="detail(item.id)">
@@ -67,7 +67,7 @@ export default {
       obj.send(data)
     },
     detail (el) {
-      this.$router.push({path: '/detail/' + el})
+      this.$router.push({path: '/d/' + el})
     }
   }
 }

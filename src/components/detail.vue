@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'detail',
+  name: 'd',
   data () {
     return {
       host: '/',

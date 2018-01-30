@@ -3,7 +3,7 @@
     <v-header></v-header>
     <div class="content">
       <ul v-loading.body="loading">
-        <li v-for="(item, index) in msg" v-bind:key="index"
+        <li v-for="(item, index) in msg" :key="item.id"
             :class="[index % 2 === 0?'green':'white']"
             :title="item.title"
             @click="click(item.id)">
