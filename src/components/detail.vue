@@ -51,7 +51,7 @@ export default {
         e.target.style.width = '100%'
         this.zoom = false
       } else {
-        e.target.style.width = '200%'
+        e.target.style.width = '150%'
         this.zoom = true
       }
     }
